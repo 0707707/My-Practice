@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia laborum a sequi, earum eligendi perspiciatis dolores, veniam nihil deserunt similique maiores, rerum consequatur? Corporis itaque eligendi suscipit nesciunt repudiandae sequi.</p>
-    <h1>hii</h1>
-</body>
+<html>
+    <head>
+        <title>CSS Selector</title>
+        <style>
+             div{
+                width: 200px;
+                height: 200px;
+                background-color: white;
+             }
+
+             #a2{
+                display:block;
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+            }
+
+            .a3{
+                display: block;
+                width: 200px;
+                height: 200px;
+                background-color: purple;
+            }
+
+            a[href="https://Google.com"]{
+                display: block;
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+
+            *{
+              border: 10px solid #000;  
+              
+            }
+
+            div,span#a2,span.a3,a[href="https://Google.com"]{
+               display:inline-block;
+            }
+
+            h1::before{
+                content:url(file:///E:/My%20VS%20Code/happy-face-smiling-emoticon-mvjglw5in87ngrqx.webp) ;
+            }
+            div#c1:hover{
+                background-color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>CSS Element Selector</div>
+        <span id="a2">CSS Id Selector</span>
+        <span class="a3">CSS Class Selector</span>
+        <a href="https://Google.com">CSS Atribute Selector</a>
+        <h1>CSS Pesudo Element Selector ::</h1>
+        <div id="c1">CSS Pesudo Class Selector</div>
+    </body>
 </html>
